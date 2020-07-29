@@ -205,23 +205,53 @@ main {
     padding-right: 5px; }
 
 .boxes {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
+  .boxes .container {
+    max-width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em; }
   .boxes div {
     font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #66fcf1;
-      color: #000; }
-      .boxes div:hover span {
-        color: #000; }
+    .boxes div .icon {
+      padding: 0.4rem; }
+      .boxes div .icon:hover {
+        color: #66fcf1;
+        transition: all 0.5s ease-out; }
+    .boxes div .contact form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px; }
+    .boxes div .contact form label {
+      display: block; }
+    .boxes div .contact form p {
+      margin: 0; }
+    .boxes div .contact form .full {
+      grid-column: 1 / 3; }
+    .boxes div .contact form button,
+    .boxes div .contact form input,
+    .boxes div .contact form textarea {
+      width: 100%;
+      padding: 1em;
+      border: 1px solid #c9e6ff; }
+    .boxes div .contact form button {
+      background: #c9e6ff;
+      border: 0;
+      text-transform: uppercase; }
+    .boxes div .contact form button:hover,
+    .boxes div .contact form button:focus {
+      background: #92bde7;
+      color: #fff;
+      outline: 0;
+      transition: background-color 2s ease-out; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
