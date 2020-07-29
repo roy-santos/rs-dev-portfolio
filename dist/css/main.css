@@ -201,6 +201,8 @@ main {
       opacity: 0.5;
       border-color: #66fcf1;
       transition: all 0.5s ease-out; }
+  .projects i {
+    padding-right: 5px; }
 
 .boxes {
   display: flex;
