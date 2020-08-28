@@ -323,7 +323,7 @@ main {
     grid-template-areas: "bioimage" "bio";
     grid-template-columns: 1fr; }
   .about-jobs {
-    grid-template-areas: "job1" "job2" "job3";
+    grid-template-areas: "job3" "job2" "job1";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
