@@ -36,6 +36,11 @@ h3 {
 a {
   color: #fff;
   text-decoration: none;
+
+  &.noClick {
+    pointer-events: none;
+    cursor: default;
+  }
 }
 
 header {
@@ -232,22 +237,26 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
-  &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
-  }
 }
 
 .btn-dark {
   @extend .btn;
   background: darken($primary-color, 50);
   color: #fff;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
 }
 
 .btn-light {
   @extend .btn;
   background: lighten($primary-color, 50);
   color: #fff;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
 }
 
 #main-footer {

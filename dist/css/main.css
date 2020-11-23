@@ -133,6 +133,9 @@ h3 {
 a {
   color: #fff;
   text-decoration: none; }
+  a.noClick {
+    pointer-events: none;
+    cursor: default; }
 
 header {
   position: fixed;
@@ -266,17 +269,20 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #66fcf1;
-    color: #000; }
 
 .btn-dark {
   background: black;
   color: #fff; }
+  .btn-dark:hover {
+    background: #66fcf1;
+    color: #000; }
 
 .btn-light {
   background: #7880a2;
   color: #fff; }
+  .btn-light:hover {
+    background: #66fcf1;
+    color: #000; }
 
 #main-footer {
   text-align: center;
